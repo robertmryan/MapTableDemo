@@ -12,9 +12,13 @@
 		C43BFA1D2B1909920044372C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43BFA1C2B1909920044372C /* Assets.xcassets */; };
 		C43BFA212B1909920044372C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43BFA202B1909920044372C /* Preview Assets.xcassets */; };
 		C4B775C72B1909C9008407D2 /* MapTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B775C62B1909C9008407D2 /* MapTable.swift */; };
+		C4B775C92B191014008407D2 /* SampleKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B775C82B191014008407D2 /* SampleKey.swift */; };
+		C4B775CB2B191099008407D2 /* SampleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B775CA2B191099008407D2 /* SampleValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C409B4302B1972F5005AD3E6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C409B4312B197740005AD3E6 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		C43BFA152B1909910044372C /* MapTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43BFA182B1909910044372C /* MapTableDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableDemoApp.swift; sourceTree = "<group>"; };
 		C43BFA1A2B1909910044372C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		C43BFA1E2B1909920044372C /* MapTableDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapTableDemo.entitlements; sourceTree = "<group>"; };
 		C43BFA202B1909920044372C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4B775C62B1909C9008407D2 /* MapTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTable.swift; sourceTree = "<group>"; };
+		C4B775C82B191014008407D2 /* SampleKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleKey.swift; sourceTree = "<group>"; };
+		C4B775CA2B191099008407D2 /* SampleValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,8 @@
 		C43BFA0C2B1909910044372C = {
 			isa = PBXGroup;
 			children = (
+				C409B4302B1972F5005AD3E6 /* README.md */,
+				C409B4312B197740005AD3E6 /* LICENSE.md */,
 				C43BFA172B1909910044372C /* MapTableDemo */,
 				C43BFA162B1909910044372C /* Products */,
 			);
@@ -55,8 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				C43BFA182B1909910044372C /* MapTableDemoApp.swift */,
-				C43BFA1A2B1909910044372C /* ContentView.swift */,
-				C4B775C62B1909C9008407D2 /* MapTable.swift */,
+				C491F4782B1912C900667067 /* View */,
+				C491F4772B1912BC00667067 /* Model */,
+				C491F4792B1916CA00667067 /* Helpers */,
 				C43BFA1C2B1909920044372C /* Assets.xcassets */,
 				C43BFA1E2B1909920044372C /* MapTableDemo.entitlements */,
 				C43BFA1F2B1909920044372C /* Preview Content */,
@@ -70,6 +79,31 @@
 				C43BFA202B1909920044372C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C491F4772B1912BC00667067 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4B775C82B191014008407D2 /* SampleKey.swift */,
+				C4B775CA2B191099008407D2 /* SampleValue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C491F4782B1912C900667067 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C43BFA1A2B1909910044372C /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C491F4792B1916CA00667067 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C4B775C62B1909C9008407D2 /* MapTable.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43BFA1B2B1909910044372C /* ContentView.swift in Sources */,
+				C4B775C92B191014008407D2 /* SampleKey.swift in Sources */,
 				C43BFA192B1909910044372C /* MapTableDemoApp.swift in Sources */,
+				C4B775CB2B191099008407D2 /* SampleValue.swift in Sources */,
 				C4B775C72B1909C9008407D2 /* MapTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
